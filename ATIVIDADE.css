@@ -1,0 +1,153 @@
+* {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: #5d5d7d;
+}
+
+.wrapper {
+  height: 100vw;
+  width: 100vw;
+}
+
+.container-left {
+  display: inline-block;
+  width: 60%;
+  padding-left: 136px;
+  margin-top: 25%;
+}
+
+.container-right {
+  display: inline-block;
+  background-color: rgba(97, 97, 128, 0.16);
+  height: 100vw;
+  width: 40%;
+  position: absolute;
+}
+
+img {
+  position: relative;
+  top: 5%;
+  right: 125px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 80px;
+  color: #5d5d7d;
+  width: 420px;
+}
+
+p {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #5d5d7d;
+  opacity: 60%;
+  margin: 15px 0;
+  width: 540;
+}
+
+button {
+  width: 269px;
+  height: 62px;
+  background: #9499ea;
+  box-shadow: 0px 10px 24px 0px #9499ea19;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 36px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+a {
+  width: 59px;
+  height: 41px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 41px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #5d5d7d;
+}
+
+a:nth-child(2) {
+  opacity: 0.4;
+}
+
+a:hover {
+  opacity: 0.4;
+}
+
+a:active {
+  opacity: 0.8;
+}
+
+header {
+  margin: 24px 0 0 57px;
+}
+
+@media screen and (max-width: 900px) {
+  .container-left {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container-right {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: static;
+    padding: 40px;
+  }
+
+  img {
+    position: static;
+    max-width: 90%;
+  }
+
+  header {
+    display: none;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 52px;
+    width: auto;
+    margin: 58px 50px 0 50px;
+    text-align: center;
+  }
+
+  p {
+    margin: 15px 40px;
+    width: auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  button {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .container-left {
+    height: 60%;
+  }
+}
